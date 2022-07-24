@@ -527,7 +527,7 @@ footer p a {
 
 @media (max-width:760px) {
     .navbar .max-width .burger-ka-saken {
-        display: contents;
+        display: block;
          z-index: 9999;
     }
     .navbar .max-width .burger-ka-saken img {
