@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.section {
+    margin: 100px 0px;
+    font-family: 'noto sans', sans-serif;
+}
+
+.section .title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #001278;
+}
+
+.max-width {
+    max-width: 1200px;
+    padding: 0px 80px;
+    margin: auto;
+}
+
+
+/*Navigation Bar Section*/
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 16px 0px;
+    background: none;
+    font-family: 'noto sans', sans-serif;
+    z-index: 1;
+    transition: 500ms ease-in-out;
+}
+
+.navbar.shadow {
+    box-shadow: 0 0.125rem 0.1875rem rgb(0 0 0 / 15%);
+}
+
+
+/*js*/
+
+.navbar.sticky {
+    background: white;
+    transition: 500ms ease-in-out;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .max-width .burger-ka-saken {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar .logo a {
+    /* color: lightblue; */
+    color: #c6d8ff;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+/*js*/
+
+.navbar .logo a.color {
+    color: #001179;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+/*js*/
+
+.navbar .menu li a.color {
+    color: #001278;
+}
+
+.navbar .menu li a {
+    display: block;
+    /* color: #fff; */
+    /* color: #00e1ff; */
+    color: #e2e9f8;
+    font-size: 17px;
+    margin-left: 30px;
+    transition: all 0.3s ease-out;
+}
+
+.navbar .menu li a:hover {
+    Color: #a5fafd;
+    transition: 0.2s ease-in-out;
+}
+
+
+/*Home Section*/
+
+.home {
+    background: url("img/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'noto sans', sans-serif;
+}
+
+.home .max-width .home-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #00e1ff;
+    transition: all 0.3s ease;
+    padding: 120px 0px;
+}
+
+.home .max-width .home-content .left {
+    flex-grow: 1;
+}
+
+.home .max-width .home-content .right {
+    flex-grow: 1;
+}
+
+.home .max-width .home-content .right img {
+    width: 100%;
+    height: 500px;
+}
+
+.home .max-width .home-content .price {
+    color: white;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-left: 23px;
+}
+
+.home .max-width .home-content a button {
+    padding: 15px 18px;
+    color: white;
+    background: transparent;
+    transition: all 0.2s linear;
+    margin-top: 55px;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.home .max-width .home-content a button span {
+    font-size: 13px;
+}
+
+.home .max-width .home-content a button:hover {
+    background: #00e1ffbb;
+}
+
+.home .max-width .home-content .text-1 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.home .max-width .home-content .text-2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+
+/*About Section*/
+
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 300px;
+    width: 260px;
+    border-radius: 20px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.8em;
+}
+
+.about .about-content .right h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+
+/*services Section*/
+
+.services {
+    /* background: #00d7fe; */
+    background: url(/img/scott-graham-5fNmWej4tAA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px;
+    background-attachment: fixed;
+}
+
+.services .title {
+    color: white;
+}
+
+.services .services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services .services-content .card {
+    flex-basis: calc(31% - 30px);
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0px 10px;
+    line-height: 2rem;
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.services .services-content .card .text p {
+    font-size: 13px;
+}
+
+.services .services-content .card:hover {
+    transform: scale(1.06);
+}
+
+.services .services-content .card img {
+    height: 50px;
+    width: 50px;
+}
+
+.services .services-content .card-1 {
+    flex-grow: 1;
+}
+
+.services .services-content .card-2 {
+    flex-grow: 1;
+}
+
+.services .services-content .card-3 {
+    flex-grow: 1;
+}
+
+
+/*skills section*/
+
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills .skills-content .column {
+    flex-basis: 100%;
+}
+
+.skills .skills-content .column-right {
+    /* flex-grow: 1; */
+    flex-basis: 45%;
+    text-align: center;
+}
+
+.skills .skills-content .column-right img {
+    width: 100%;
+}
+
+.skills .skills-content .column-left {
+    /* flex-grow: 1; */
+    flex-basis: 55%;
+}
+
+.skills .skills-content .column-left h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.skills .skills-content .column-left p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.8em;
+}
+
+.skills .skills-content .column-left .button button {
+    background: #1a2949;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 15px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.skills .skills-content .column-left .button button:hover {
+    background: #1a2949ab;
+}
+
+.skills .skills-content .column-right .bar {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .column-right .bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.skills .skills-content .column-right .bar span {
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+.skills .skills-content .column-right .bar .line {
+    width: 100%;
+    background: lightgray;
+    height: 5px;
+    position: relative;
+}
+
+.skills .skills-content .column-right .bar .line:before {
+    content: "";
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: #1a2949;
+    position: absolute;
+}
+
+.skills .skills-content .column-right .html::before {
+    width: 95%;
+}
+
+.skills .skills-content .column-right .css::before {
+    width: 80%;
+}
+
+.skills .skills-content .column-right .js::before {
+    width: 50%;
+}
+
+.skills .skills-content .column-right .php::before {
+    width: 10%;
+}
+
+.skills .skills-content .column-right .mysql::before {
+    width: 10%;
+}
+
+
+/*Contact Section*/
+
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .contact-content .column {
+    padding: 0px 10px;
+    flex-basis: 45%;
+}
+
+.contact .contact-content .left {
+    flex-grow: 1;
+    text-align: justify;
+}
+
+.contact .contact-content .right {
+    flex-grow: 1;
+    /* margin-left: 20px; */
+}
+
+.contact .contact-content .left h3 {
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.contact .contact-content .left .main {
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+.contact .contact-content .left .icon {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.contact .contact-content .left .icon p {
+    font-size: 13px;
+}
+
+.contact .contact-content .left .icon img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contact .contact-content .right h3 {
+    font-size: 21px;
+}
+
+.contact .contact-content .right .field {
+    margin: 30px 0px;
+}
+
+.contact .contact-content .right .name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .contact-content .right .name .text {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.contact .contact-content .right .name .email {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.contact .contact-content .right .field input,
+.contact .contact-content .right .text-area textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 7px;
+    border: 1px solid lightgray;
+    resize: none;
+}
+
+.contact .contact-content .right .field input:focus,
+.contact .contact-content .right .text-area textarea:focus {
+    outline: #1a2949 1px solid;
+}
+
+.contact .contact-content .right .button button {
+    padding: 15px 20px;
+    background: #1a2949;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contact .contact-content .right .button button:hover {
+    background: #1a2949b6;
+}
+
+
+/*footer section*/
+
+footer {
+    text-align: center;
+    background: #1a2949;
+    padding: 20px;
+    color: white;
+    font-family: 'noto sans', sans-serif;
+}
+
+footer p a {
+    color: silver;
+}
+
+
+/*media query*/
+
+@media (max-width:1040px) {
+    .home .max-width .home-content .text-1,
+    .home .max-width .home-content .text-2 {
+        font-size: 35px;
+    }
+    .home .max-width .home-content .right img {
+        height: 400px;
+    }
+}
+
+@media (max-width:900px) {
+    .skills .skills-content .column-right img {
+        height: 280px;
+    }
+}
+
+@media (max-width:870px) {
+    .home .max-width .home-content .right img {
+        height: 300px;
+    }
+}
+
+@media (max-width:768px) {
+    .services .services-content .card {
+        flex-basis: 100%;
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width:760px) {
+    .navbar .max-width .burger-ka-saken {
+        display: contents;
+    }
+    .navbar .max-width .burger-ka-saken img {
+        height: 50px;
+        z-index: 99999;
+    }
+    .navbar .max-width .burger-ka-saken img.actives {
+        left: 0;
+    }
+    .navbar .menu {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        background: black;
+        opacity: 98%;
+        padding-top: 80px;
+        text-align: center;
+        transition: ease 0.7s all;
+    }
+    .navbar .menu.active {
+        /* left: 0; */
+        top: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px;
+    }
+    .navbar .menu li a.toggle {
+        top: -100%;
+    }
+    .navbar .menu li a.text {
+        color: white;
+    }
+    .home .max-width .home-content .left {
+        width: 100%;
+        text-align: center;
+        order: 1;
+    }
+    .home .max-width .home-content .left .price {
+        margin-left: 5px;
+    }
+    .home .max-width .home-content .right {
+        width: 100%;
+        text-align: center;
+        order: 0;
+    }
+    .home .max-width .home-content .right img {
+        height: 350px;
+    }
+    .about .title,
+    .about .about-content .left img {
+        margin-bottom: 10px;
+    }
+    .about .about-content .column {
+        width: 100%;
+        text-align: center;
+    }
+    .about .about-content .column p {
+        text-align: center;
+    }
+    .services {
+        background-attachment: scroll;
+    }
+    .services .services-content .card {
+        flex-basis: 100%;
+        margin: 10px 0px;
+    }
+    .skills .skills-content .column {
+        flex-basis: 100%;
+    }
+    .contact .contact-content .column {
+        flex-basis: 100%;
+    }
+    .skills .skills-content .column-left {
+        order: 2;
+        flex-basis: 100%;
+    }
+    .skills .skills-content .column-right img {
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+    .contact .contact-content .left {
+        width: 100%;
+    }
+    .contact .contact-content .right {
+        width: 100%;
+    }
+}
+
+@media (max-width:440px) {
+    .max-width {
+        max-width: 1000px;
+        padding: 0px 30px;
+        margin: auto;
+    }
+}
+
+@media (max-width:347px) {
+    .home .max-width .home-content .text-1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .home .max-width .home-content .text-2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:300px) {
+    .max-width {
+        max-width: 1000px;
+        padding: 0px 30px;
+        margin: auto;
+    }
+    .about .about-content .left img {
+        height: 200px;
+        width: 160px;
+        border-radius: 20px;
+    }
+}
