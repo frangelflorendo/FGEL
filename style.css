@@ -593,7 +593,7 @@ footer p a {
         text-align: center;
     }
     .services {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
     .services .services-content .card {
         flex-basis: 100%;
