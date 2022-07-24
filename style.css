@@ -594,8 +594,6 @@ footer p a {
     }
     .services {
         background-attachment: fixed;
-        transform: translate3d(0,0,0);
--webkit-transform: translate3d(0,0,0);
     }
     .services .services-content .card {
         flex-basis: 100%;
