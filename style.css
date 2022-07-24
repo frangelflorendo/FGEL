@@ -531,9 +531,7 @@ footer p a {
          z-index: 9999;
     }
     .navbar .max-width .burger-ka-saken img {
-        display: contents;
         height: 50px;
-        z-index: 9999;
     }
     .navbar .max-width .burger-ka-saken img.actives {
         left: 0;
