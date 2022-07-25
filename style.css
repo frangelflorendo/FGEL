@@ -541,7 +541,7 @@ footer p a {
         width: 100%;
         position: fixed;
         left: 0;
-        top: -100%;
+        top: -120%;
         background: black;
         opacity: 98%;
         padding-top: 80px;
